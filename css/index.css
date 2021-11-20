@@ -1,0 +1,274 @@
+*{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+header{
+    width: 100%;
+}
+
+header #nav{
+    background-color: black;
+    display: flex;
+    background-size: cover;
+}
+
+header #nav #logo{
+    width: 20%;
+    margin: 0px 30px;
+}
+
+header #nav .nav{
+    margin: 20px 5px;
+    width: 15%;
+    text-decoration: none;
+    color: #fce5b9;
+    font-weight: bold;
+}
+
+header .btn{
+    position: absolute;
+    margin: 20px -20px;
+    width: 100%;
+    text-decoration: none;
+    color: #fce5b9;
+    font-weight: bold;
+}
+
+header .dropdown{
+    position: relative;
+    width: 15%;
+    display: inline-block;
+}
+
+header .dropdown-content{
+    position: absolute;
+    display: none;
+    background-color: #061c25;
+    z-index: 1;
+    top:65px;
+    right:63px;
+}
+
+header .dropdown-content a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    text-align: center;
+    margin: 15px 0px;
+}
+
+header .dropdown-content a:hover{
+    background-color: #061c25;
+}
+
+
+.dropdown:hover .dropdown-content{
+    display: block;
+    width: 100%;
+}
+
+#navBtn{
+    display: none;
+}
+
+#M-nav{
+    display: none;
+}
+#slideshow{
+    background-size: cover;
+    background-image: url(blurred1.jpg);
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+
+#slideshow img{
+    position: absolute;
+    width: 90%;
+    top: 7%;
+    left: 5%;
+}
+
+#slideshow label{
+    display: inline-block;
+    background:#559392;
+    margin: 0 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    padding:5px;
+}
+
+#slideshow #dot{
+    position: absolute;
+    bottom: 5%;
+    left: 44%;
+}
+
+#slideshow svg{
+    fill: none;
+    position:absolute;
+    stroke: #c2c1c1;
+    stroke-width: 1px;
+    stroke-linecap: round;
+    stroke-dasharray: 2452;
+    padding: 70px;
+    z-index: 10;
+    top: -9%;
+}
+
+#info {
+padding: 50px 50px 50px 30px;
+display: flex;
+flex-wrap: wrap;
+position: relative;
+}
+
+#info .info-box{
+    width: 30%;
+    margin-left: 39px;
+    position: relative;
+}
+
+
+#info .info-box img{
+    width: 100%;
+}
+
+#info .info-box .link{
+    text-decoration: none;
+    color:black;
+}
+
+#info .info-box h2{
+    font-size: 19px;
+    font-weight: 900;
+    margin-top: 0;
+}
+
+#info .info-box .category{
+    color:#0ac6e4;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+
+#info .info-box .text{
+    color:grey;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+#info .info-box .time{
+    color:grey;
+    font-weight: 600;
+    font-size: 14px;
+    margin: 25px 0;
+}
+
+#info .info-box svg{
+    fill: none;
+    position:absolute;
+    stroke: #c2c1c1;
+    stroke-width: 1px;
+    stroke-linecap: round;
+    stroke-dasharray: 1120;
+    top:-4%;
+    padding: 10px;
+}
+
+#info #more{
+    position: absolute;
+    bottom: 1%;
+    left: 43%;
+    padding: 10px 45px;
+    background-color: #0bc6e4;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+footer{
+    text-align: center;
+    width: 100%;
+    background-color: black;
+    padding: 50px;
+}
+
+footer #text{
+    color: white;
+    font-size: 13px;
+    padding: 10px 200px;
+}
+
+
+footer .more-info{
+    color: white;
+    padding: 10px;
+}
+
+footer #bottom-footer{
+    margin: 20px;
+    text-align: center;
+}
+
+footer #bottom-footer a{
+    text-align: center;
+    padding: 15px 30px;
+    background-color: #0bc6e4;
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+footer #bottom-footer span{
+    width: 180px;
+    height: 70px;
+    margin-bottom: -30px;
+    background-image: url(vn-12.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+@media screen and (max-width: 768px) {
+
+#info .info-box{
+    margin-left: 100px;
+}   
+
+}
+
+
+@media screen and (max-width: 750px) {
+
+header #nav{
+justify-content: space-between;
+}
+
+header #PC-nav{
+    display: none;
+}
+
+#navBtn{
+    width: 7%;
+    display: block;
+    background-color:#ccbe91;
+    margin: 10px;
+    border-radius: 50%;
+    height: 45px;
+}
+#navBtn span{
+    height:5px;
+    margin: 7px;
+    display: block;
+    border-radius: 21px;
+    background-color: black;
+}
+}
