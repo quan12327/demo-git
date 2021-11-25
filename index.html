@@ -46,18 +46,36 @@
                 </ul>
             </div>
   
-            <div class="navBtn">
+            <div class="navBtn" onclick="mDropdown()">
                 <span class="line"></span>
                 <span class="line"></span>
                 <span class="line"></span>
             </div>
-            <div class="m-nav">
+            <div id="m-nav">
                   <div class="m-header">
                     <div class="m-sidebar-logo"><a href=""></a>
                   </div>
                   <div class="m-content">
-                      <div class="group"><div class="title">TIN TỨC</div></div>
-                      <div class="group"><div class="title">GIỚI THIỆU</div></div>
+                      <div class="group">
+                          <div class="title" onclick="clickDropNew()">TIN TỨC</div>
+                          <ul class="active">
+                            <li><a href="event.html">TIN TỨC</a></li>
+                            <li><a href="event.html">SỰ KIỆN</a></li>
+                            <li><a href="">TIN GAME</a></li>
+                            <li><a href="">ESPORTS</a></li>
+                            <li><a href="">CỘNG DỒNG</a></li>
+                            <li><a href="">CẨM NANG</a></li>
+                          </ul>
+                        </div>
+                    
+                      <div class="group">
+                          <div class="title" onclick="clickDropInfo()">GIỚI THIỆU</div>
+                          <ul class="active" id="m-info">
+                            <li><a href="">GIỚI THIỆU</a></li>
+                            <li><a href="">TƯỚNG</a></li>
+                            <li><a href="">TRANG BỊ</a></li>
+                          </ul>
+                        </div>
                       <div class="group"><div class="title">ESPORTS</div></div>
                       <div class="group"><div class="title">HỖ TRỢ</div></div>
                       <div class="group"><div class="title">NẠP THẺ</div></div>
@@ -190,5 +208,31 @@
             <span></span>
         </div>
     </footer>
+    <script>
+        function mDropdown() {
+          let x = document.getElementById("m-nav");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+
+        function clickDropNew(){
+            let x = document.getElementsByClassName("active");
+            if(x[0].style.display ==="block" )
+                x[0].style.display ="none";
+            else
+                x[0].style.display ="block"
+        }
+
+        function clickDropInfo(){
+            let x = document.getElementsByClassName("active");
+            if(x[1].style.display ==="block" )
+                x[1].style.display ="none";
+            else
+                x[1].style.display ="block"
+        }
+        </script>
 </body>
 </html>
