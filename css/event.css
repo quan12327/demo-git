@@ -405,8 +405,8 @@ footer #bottom-footer span{
         }
     
         .navBtn .line{
-            width: 32px;
-            height: 4px;
+            width: 30px;
+            height: 2px;
             margin: auto;
             background: black;
             display: block;
@@ -440,7 +440,7 @@ footer #bottom-footer span{
         }
     
         #m-nav .title{
-            font-size: 32px;
+            font-size: 28px;
             background: linear-gradient(#fce5b9,#d1ad6f);
             -webkit-background-clip: text;
             -webkit-text-fill-color: tan;
@@ -450,7 +450,7 @@ footer #bottom-footer span{
         .active{
             margin: 0;
             display: none;
-            font-size: 30px;
+            font-size: 24px;
         }
     
         .active li{
@@ -466,9 +466,13 @@ footer #bottom-footer span{
             top:30%;
         }
     
+        #site-info{
+            margin: 0px 7%;
+        }
+
         #info .info-box{
             width: 90%;
-            margin-left: 50px;
+            margin-left: 7%;
         }
     
         #info #more{

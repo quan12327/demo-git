@@ -360,8 +360,8 @@ header .logo{
     }
 
     .navBtn .line{
-        width: 32px;
-        height: 4px;
+        width: 30px;
+        height: 2px;
         margin: auto;
         background: black;
         display: block;
@@ -395,7 +395,7 @@ header .logo{
     }
 
     #m-nav .title{
-        font-size: 32px;
+        font-size: 28px;
         background: linear-gradient(#fce5b9,#d1ad6f);
         -webkit-background-clip: text;
         -webkit-text-fill-color: tan;
@@ -405,7 +405,7 @@ header .logo{
     .active{
         margin: 0;
         display: none;
-        font-size: 30px;
+        font-size: 24px;
     }
 
     .active li{
@@ -419,6 +419,10 @@ header .logo{
 
     #slideshow img {
         top:30%;
+    }
+
+    #slideshow #dot {
+        left: 38%;
     }
 
     #info .info-box{
