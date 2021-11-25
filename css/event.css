@@ -440,7 +440,7 @@ footer #bottom-footer span{
         }
     
         #m-nav .title{
-            font-size: 28px;
+            font-size: 24px;
             background: linear-gradient(#fce5b9,#d1ad6f);
             -webkit-background-clip: text;
             -webkit-text-fill-color: tan;
@@ -450,7 +450,7 @@ footer #bottom-footer span{
         .active{
             margin: 0;
             display: none;
-            font-size: 24px;
+            font-size: 20px;
         }
     
         .active li{
