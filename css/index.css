@@ -395,7 +395,7 @@ header .logo{
     }
 
     #m-nav .title{
-        font-size: 24px;
+        font-size: 20px;
         background: linear-gradient(#fce5b9,#d1ad6f);
         -webkit-background-clip: text;
         -webkit-text-fill-color: tan;
@@ -405,7 +405,7 @@ header .logo{
     .active{
         margin: 0;
         display: none;
-        font-size: 20px;
+        font-size: 16px;
     }
 
     .active li{
@@ -422,7 +422,7 @@ header .logo{
     }
 
     #slideshow #dot {
-        left: 35%;
+        left: 33%;
     }
 
     #info .info-box{
@@ -431,7 +431,7 @@ header .logo{
     }
 
     #info #more{
-        left: 40%;
+        left: 30%;
     }
     footer #text{
         padding: 10px 0;
