@@ -422,12 +422,12 @@ header .logo{
     }
 
     #slideshow #dot {
-        left: 37%;
+        left: 35%;
     }
 
     #info .info-box{
         width: 90%;
-        margin-left: 50px;
+        margin-left: 7%;
     }
 
     #info #more{
