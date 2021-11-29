@@ -390,7 +390,7 @@ footer #bottom-footer span{
     }
 
     .swiper-pagination .swiper-pagination-bullet{
-        height: 7px;
+        height: 15px;
         width: 2%;
     }
 
@@ -505,6 +505,11 @@ footer #bottom-footer span{
 
 .swiper{
         height: 200px;
+}
+
+.swiper-pagination .swiper-pagination-bullet{
+    height: 7px;
+    width: 2%;
 }
 
 #info #more{
