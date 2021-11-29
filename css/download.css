@@ -434,10 +434,14 @@ footer #text{
     padding: 10px 200px;
 }
 
-
 footer .more-info{
     color: white;
     padding: 10px;
+    text-decoration: none;
+}
+
+footer .more-info i{
+    font-weight: 600;
 }
 
 footer #bottom-footer{
@@ -466,16 +470,3 @@ footer #bottom-footer span{
     background-repeat: no-repeat;
     display: inline-block;
 }
-
-@media screen and (max-width: 768px) {
-
-    #info .info-box{
-        margin-left: 100px;
-    }   
-    
-    }
-
-@media screen and (min-width: 750px) {
-
-    
-    }

@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
     <title>Document</title>
 </head>
@@ -84,22 +86,27 @@
               </div>
         </div>
       </header>
-
-    <div id="slideshow">
-        <!-- <svg viewBox="0 0 908 318">
-            <path d="M886.1,1L907,21.9V317H1V1H886.1"></path>
-        </svg> -->
-        <img src="img/076-KV-ChienBinhRong-1220x400.png" alt="">
-        <div id="dot">
-            <label for=""></label>
-            <label for=""></label>
-            <label for=""></label>
-            <label for=""></label>
-            <label for=""></label>
-            <label for=""></label>
+    <div class="slide-content">
+        <svg viewBox="0 0 1200 420"><path d="M1178.1,1l20.9,20.9V419H1V1H1178.1"></path></svg>
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><a href=""><img src="img/swiper/116-202111-AnChinh-1220x400.jpg" alt=""></a></div>
+            <div class="swiper-slide"><a href=""><img src="img/swiper/117-202111-SaleTrungLinhThu-1220x400.jpg" alt=""></a></div>
+            <div class="swiper-slide"><a href=""><img src="img/swiper/202111-022-TFT-1220x400.jpg" alt=""></a></div>
+            <div class="swiper-slide"><a href=""><img src="img/swiper/202111-119-Topup-1220x400.jpg" alt=""></a></div>
+            <div class="swiper-slide"><a href=""><img src="img/swiper/24-202111-TuongTiNi-1220x400.jpg" alt=""></a></div>
+            <div class="swiper-slide"><a href=""><img src="img/swiper/85-202111-Tiemtratinhyeu-1220x400.jpg" alt=""></a></div>
+            ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+    
         </div>
     </div>
-
+  
+    
     <div id="info">
         <div class="info-box">
             <a href="" class="link">
@@ -208,6 +215,7 @@
             <span></span>
         </div>
     </footer>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script>
         function mDropdown() {
           let x = document.getElementById("m-nav");
@@ -233,6 +241,19 @@
             else
                 x[1].style.display ="block"
         }
+
+        const swiper = new Swiper('.swiper', {
+        // Optional parameters  
+            autoplay:{
+                delay:2000,
+            },
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+            clickable:true,
+        },
+
+        });
         </script>
 </body>
 </html>

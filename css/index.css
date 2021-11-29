@@ -23,24 +23,24 @@ header{
 }
 
 header .logo{
-    width: 14%;
+    width: 15%;
     display: inline-block;
     height: 80%;
-    margin-top: 5px;
-    margin-left: 50px;
+    margin-top: 1%;
+    margin-left: 2%;
 }
 
 header .logo a{
     width: 100%;
     height: 100%;
-    display: block;
+    display: inline-block;
     background: url(https://cdn.vn.garenanow.com/web/lol-product/LOLwebsite/img/logo.png) no-repeat;
     background-size: contain;
     cursor: pointer;
 }
 
 .pc-nav{
-    width: 80%;
+    width: 83%;
     height: 100%;
     float: right;
     display: block;
@@ -57,7 +57,6 @@ header .logo a{
     text-align: center;
     vertical-align: top;
     margin-top: 10px;
-    margin-left: 10px;
 }
 
 ul{
@@ -86,19 +85,18 @@ ul{
 }
 .dropdown{
     display: inline-block;
-    width: 30%;
+    width: 37%;
     overflow: hidden;
     text-align: center;
     height: 100%;
 }
 
 .dropdown-li {
-    width: 40%;
+    width: 45%;
     display: inline-block;
     text-align: center;
     vertical-align: top;
     margin-top: 10px;
-    margin-left: 10px;
 }
 
 .dropdown-content {
@@ -116,12 +114,12 @@ ul{
 }
 
 .row{
-    margin-left: 22%;
+    margin-left: 17%;
 }
 
 .column {
     float: left;
-    width: 15%;
+    width: 18%;
     background-color: #2c3e50;
     margin-left: 0;
 }
@@ -135,49 +133,84 @@ ul{
     padding: 10px 0;
   }
   
+  .slide-content{
+      position: relative;
+  }
 
-#slideshow{
-    background-size: cover;
-    background-image: url(blurred1.jpg);
-    width: 100%;
-    height: 500px;
-    position: relative;
-}
-
-#slideshow img{
+  .slide-content svg{
     position: absolute;
-    width: 90%;
-    top: 7%;
-    left: 5%;
-}
+    width: 84%;
+    left: 8%;
+    top:3%;
+    z-index: 10;
+    pointer-events: none;
 
-#slideshow label{
-    display: inline-block;
-    background:#559392;
-    margin: 0 5px;
-    border-radius: 50%;
-    cursor: pointer;
-    padding:5px;
-}
+  }
 
-#slideshow #dot{
-    position: absolute;
-    bottom: 5%;
-    left: 44%;
-}
-
-#slideshow svg{
+  .slide-content svg path{
     fill: none;
-    position:absolute;
     stroke: #c2c1c1;
     stroke-width: 1px;
     stroke-linecap: round;
-    stroke-dasharray: 2452;
-    padding: 70px;
-    z-index: 10;
-    top: -9%;
-}
+    stroke-dasharray: 3240;
+    -webkit-animation: svgSlide 2.5s ease 1 backwards;
+    animation: svgSlide 2.5s ease 1 backwards;
+  }
 
+  @keyframes svgSlide {
+      0%{
+          stroke-dashoffset: 3240;
+      }
+
+      25%{
+        stroke-dashoffset: 2430;
+      }
+
+      50%{
+        stroke-dashoffset: 1620;
+      }
+
+       75%{
+        stroke-dashoffset: 810;
+      }
+
+      100%{
+        stroke-dashoffset: 0;
+      }
+      
+  }
+
+  .swiper {
+    width: 100%;
+    height: 500px;
+    background-image: url(blurred1.jpg);
+  }
+
+  .swiper .swiper-slide{
+      position: relative;
+  }
+
+  .swiper .swiper-slide img{
+    width: 80%;
+    position: absolute;
+    top:7%;
+    left: 10%;
+  }
+
+  .swiper-pagination{
+      margin-bottom: 1%;
+  }
+
+  .swiper-pagination .swiper-pagination-bullet{
+    background: #559392;
+    opacity: 1!important;
+    height: 20px;
+    width: 2%;
+  }
+
+  .swiper-pagination .swiper-pagination-bullet-active{
+    background: #c2902d;
+  }
 #info {
 padding: 50px 50px 50px 30px;
 display: flex;
@@ -227,20 +260,49 @@ position: relative;
 }
 
 #info .info-box svg{
-    fill: none;
     position:absolute;
-    stroke: #c2c1c1;
-    stroke-width: 1px;
-    stroke-linecap: round;
-    stroke-dasharray: 1120;
     top:-4%;
     padding: 10px;
 }
 
+#info .info-box svg path{
+    fill: none;
+    stroke: #c2c1c1;
+    stroke-width: 1px;
+    stroke-linecap: round;
+    stroke-dasharray: 1120;
+    -webkit-animation: svgInfo 2.5s ease 1 backwards;
+    animation: svgInfo 2.5s ease 1 backwards;
+}
+
+@keyframes svgInfo {
+    0%{
+        stroke-dashoffset: 1120;
+    }
+
+    25%{
+      stroke-dashoffset: 840;
+    }
+
+    50%{
+      stroke-dashoffset: 560;
+    }
+
+     75%{
+      stroke-dashoffset: 280;
+    }
+
+    100%{
+      stroke-dashoffset: 0;
+    }
+    
+}
+
+
 #info #more{
     position: absolute;
     bottom: 1%;
-    left: 43%;
+    left: 45%;
     padding: 10px 45px;
     background-color: #0bc6e4;
     text-decoration: none;
@@ -265,6 +327,11 @@ footer #text{
 footer .more-info{
     color: white;
     padding: 10px;
+    text-decoration: none;
+}
+
+footer .more-info i{
+    font-weight: 600;
 }
 
 footer #bottom-footer{
@@ -294,46 +361,41 @@ footer #bottom-footer span{
     display: inline-block;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1250px) {
+
+.swiper{
+    height: 450px;
+}
 
 #info .info-box{
-    margin-left: 100px;
+    margin-left: 13%;
 }   
 
-.pc-nav{
-    width: 83%;
-}
-
-.dropdown{
-    width: 35%;
-}
-
-.dropdown-li{
-    margin-left: 0;
-}
-
-.nav-li{
-    margin-left: 0;
-}
-
-.pc-nav .nav li a {
-    font-size: 16px;
-}
-
-header .logo{
-    margin-top: 15px;
-    margin-left: 20px;
+#info #more{
+    left: 40%;
 }
 
 }
 
-@media screen and (max-width: 750px) {
-    header{
-        position: fixed;
+@media screen and (max-width: 1000px) {
+    .swiper{
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 752px) {
+
+    .swiper{
+        height: 270px;
+    }
+
+    .swiper-pagination .swiper-pagination-bullet{
+        height: 15px;
+        width: 2%;
     }
 
     header .logo{
-        margin: 3% 35%;
+        margin: 2% 35%;
     }
 
     header .logo a{
@@ -431,10 +493,22 @@ header .logo{
     }
 
     #info #more{
-        left: 30%;
+        left: 37%;
     }
     footer #text{
         padding: 10px 0;
     }
+
+}
+
+@media screen and (max-width: 500px) {
+
+.swiper{
+        height: 200px;
+}
+
+#info #more{
+    left: 30%;
+}
 
 }
