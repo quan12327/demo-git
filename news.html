@@ -1,0 +1,320 @@
+<html lang="en">
+    <head>
+        <!DOCTYPE html>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/news.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"></a>
+            </div>
+            <div class="pc-nav">
+                <ul class="nav">
+                    <div class="dropdown">
+                          <li class="dropdown-li"><a href="event.html">TIN TỨC</a></li>
+                          <li class="dropdown-li"><a href="">GIỚI THIỆU</a></li>
+                          
+                          <div class="dropdown-content">
+                              <div class="row">
+                                  <div class="column">
+                                      <a href="event.html">TIN TỨC</a>
+                                      <a href="event.html">SỰ KIỆN</a>
+                                      <a href="#">TIN GAME</a>
+                                      <a href="#">ESPORTS</a>
+                                      <a href="#">CỘNG ĐỒNG</a>
+                                      <a href="#">CẨM NANG</a>
+                                      <a href="#">VŨ TRỤ</a>
+                                  </div>
+                                  <div class="column">
+                                      <a href="#">GIỚI THIỆU</a>
+                                      <a href="#">TƯỚNG</a>
+                                      <a href="#">TRANG BỊ</a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                    <li class="nav-li"><a href="">ESPORTS</a></li>
+                    <li class="nav-li"><a href="">HỖ TRỢ</a></li>
+                    <li class="nav-li"><a href="download.html">TẢI GAME</a></li>
+                    <li class="nav-li"><a href="">NẠP THẺ</a></li>
+                </ul>
+            </div>
+  
+            <div class="navBtn" onclick="mDropdown()">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+            <div id="m-nav">
+                  <div class="m-header">
+                    <div class="m-sidebar-logo"><a href=""></a>
+                  </div>
+                  <div class="m-content">
+                      <div class="group">
+                          <div class="title" onclick="clickDropNew()">TIN TỨC</div>
+                          <ul class="active">
+                            <li><a href="event.html">TIN TỨC</a></li>
+                            <li><a href="event.html">SỰ KIỆN</a></li>
+                            <li><a href="">TIN GAME</a></li>
+                            <li><a href="">ESPORTS</a></li>
+                            <li><a href="">CỘNG ĐỒNG</a></li>
+                            <li><a href="">CẨM NANG</a></li>
+                          </ul>
+                        </div>
+                    
+                      <div class="group">
+                          <div class="title" onclick="clickDropInfo()">GIỚI THIỆU</div>
+                          <ul class="active" id="m-info">
+                            <li><a href="">GIỚI THIỆU</a></li>
+                            <li><a href="">TƯỚNG</a></li>
+                            <li><a href="">TRANG BỊ</a></li>
+                          </ul>
+                        </div>
+                      <div class="group"><div class="title">ESPORTS</div></div>
+                      <div class="group"><div class="title">HỖ TRỢ</div></div>
+                      <div class="group"><div class="title">NẠP THẺ</div></div>
+                  </div>
+                  </div>
+              </div>
+        </div>
+      </header>
+
+    <div id="slideshow">
+        <div id="img">
+        </div>
+        <div id ="shortcut-site">
+            <a href="index.html">Trang chủ</a>
+            <span>></span>
+            <a href="news.html" id="active">Tin tức</a>
+        </div>
+    </div>
+
+
+    <div class="top-news">
+        <div class="container">
+            <div class="top-news-items">
+                <svg viewBox="0 0 360 140" data-v-5d976f7d=""><path d="M339.59,1L359,20.41V139H1V1H339.59 M340,0H0v140h360V20L340,0L340,0z" data-v-5d976f7d=""></path></svg>
+                <a href="#" class="top-news-boxes">
+                    <div class="boxes-info">
+                        <img src="img/news/top-news/009-202112-Quydoidatmoc-880x582.jpg" alt="">
+                        <div class="text-box">
+                            <p class="category">Quy đổi RP</p>
+                            <h2>Quy đổi RP - Nhận MIỄN PHÍ báu vật Chiến Binh Rồng 2021 cực kỳ giá trị từ 00:30 03/12 đến 23:59 09/12</h2>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="top-news-items">
+                <svg viewBox="0 0 360 140" data-v-5d976f7d=""><path d="M339.59,1L359,20.41V139H1V1H339.59 M340,0H0v140h360V20L340,0L340,0z" data-v-5d976f7d=""></path></svg>
+                <a href="#" class="top-news-boxes">
+                    <div class="boxes-info">
+                        <img src="img/news/top-news/10-202112-TiecBanhMlemMlem-880x582.jpg" alt="">
+                        <div class="text-box">
+                            <p class="category">Sự Kiện</p>
+                            <h2>Tham gia "Tiệm Bánh Mlem Mlem" - Thưởng thức bánh ngon, skin đẹp về tay từ 03/12 đến 09/12</h2>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="top-news-items">
+                <svg viewBox="0 0 360 140" data-v-5d976f7d=""><path d="M339.59,1L359,20.41V139H1V1H339.59 M340,0H0v140h360V20L340,0L340,0z" data-v-5d976f7d=""></path></svg>
+                <a href="#" class="top-news-boxes">
+                    <div class="boxes-info">
+                        <img src="img/news/top-news/Silco-avatar.jpg" alt="">
+                        <div class="text-box">
+                            <p class="category">Tin Game</p>
+                            <h2>Cập nhật Thông tin ĐTCL Giữa Mùa: Silco sẽ tham gia vào trận chiến!</h2>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>  
+    </div>
+
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" id="silde-1">
+                <p>Sự Kiện</p>
+                <a href="event.html"></a>
+            </div>
+            <div class="swiper-slide" id="silde-2">
+                <p>Tin Game</p>
+                <a href=""></a>
+            </div>
+            <div class="swiper-slide" id="silde-3">
+                <p>Esports</p>
+                <a href=""></a>
+            </div>
+            <div class="swiper-slide" id="silde-4">
+                <p>Cộng Đồng</p>
+                <a href=""></a>
+            </div>
+            <div class="swiper-slide" id="silde-5">
+                <p>Cẩm Nang</p>
+                <a href=""></a>
+            </div>
+            <div class="swiper-slide" id="silde-6">
+                <p>Vũ Trụ</p>
+                <a href=""></a>
+            </div>
+        </div>
+        <div class="swiper-scrollbar"></div>
+      </div>
+
+    <div id="search">
+        <div id="search-box">
+            <input type="text" placeholder="Tìm kiếm thông tin" onclick="search()">
+        </div>
+    </div>
+<div class="news-page">
+    <div id="info">
+        <!-- <div class="info-box">
+            <a href="" class="link">
+                <svg viewBox="0 0 320 240" data-v-7f40d2dc=""><path d="M299.57,1l19.42,19.39V239h-318V1H299.57" data-v-7f40d2dc=""></path></svg>
+                <img src="img/info/112-VongQuayLongThan-880x582.png" alt="" >
+                <div class="text-box">
+                    <p class="category">Sự kiện</p>
+                    <h2>Tham gia "Vòng Quay Long Thần" - Sở hữu skin KHỦNG chỉ với 10 RP từ 10:00 26/10 đến 23:59 01/11</h2>
+                    <p class="text">Chỉ với 10 RP là bạn đã có cơ hội trên tay trang phục cực khủng.</p>
+                    <p class="time">10:00 26/10/2021</p>
+                </div>
+            </a>
+        </div>
+        
+        <div class="info-box">
+            <a href="" class="link">
+                <svg viewBox="0 0 320 240" data-v-7f40d2dc=""><path d="M299.57,1l19.42,19.39V239h-318V1H299.57" data-v-7f40d2dc=""></path></svg>
+                <img src="img/info/112-VongQuayLongThan-880x582.png" alt="" >
+                <div class="text-box">
+                    <p class="category">Sự kiện</p>
+                    <h2>Tham gia "Vòng Quay Long Thần" - Sở hữu skin KHỦNG chỉ với 10 RP từ 10:00 26/10 đến 23:59 01/11</h2>
+                    <p class="text">Chỉ với 10 RP là bạn đã có cơ hội trên tay trang phục cực khủng.</p>
+                    <p class="time">10:00 26/10/2021</p>
+                </div>
+            </a>
+        </div>
+        <div class="info-box">
+            <a href="" class="link">
+                <svg viewBox="0 0 320 240" data-v-7f40d2dc=""><path d="M299.57,1l19.42,19.39V239h-318V1H299.57" data-v-7f40d2dc=""></path></svg>
+                <img src="img/info/112-VongQuayLongThan-880x582.png" alt="" >
+                <div class="text-box">
+                    <p class="category">Sự kiện</p>
+                    <h2>Tham gia "Vòng Quay Long Thần" - Sở hữu skin KHỦNG chỉ với 10 RP từ 10:00 26/10 đến 23:59 01/11</h2>
+                    <p class="text">Chỉ với 10 RP là bạn đã có cơ hội trên tay trang phục cực khủng.</p>
+                    <p class="time">10:00 26/10/2021</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="info-box">
+            <a href="" class="link">
+                <svg viewBox="0 0 320 240" data-v-7f40d2dc=""><path d="M299.57,1l19.42,19.39V239h-318V1H299.57" data-v-7f40d2dc=""></path></svg>
+                <img src="img/info/112-VongQuayLongThan-880x582.png" alt="" >
+                <div class="text-box">
+                    <p class="category">Sự kiện</p>
+                    <h2>Tham gia "Vòng Quay Long Thần" - Sở hữu skin KHỦNG chỉ với 10 RP từ 10:00 26/10 đến 23:59 01/11</h2>
+                    <p class="text">Chỉ với 10 RP là bạn đã có cơ hội trên tay trang phục cực khủng.</p>
+                    <p class="time">10:00 26/10/2021</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="info-box">
+            <a href="" class="link">
+                <svg viewBox="0 0 320 240" data-v-7f40d2dc=""><path d="M299.57,1l19.42,19.39V239h-318V1H299.57" data-v-7f40d2dc=""></path></svg>
+                <img src="img/info/112-VongQuayLongThan-880x582.png" alt="" >
+                <div class="text-box">
+                    <p class="category">Sự kiện</p>
+                    <h2>Tham gia "Vòng Quay Long Thần" - Sở hữu skin KHỦNG chỉ với 10 RP từ 10:00 26/10 đến 23:59 01/11</h2>
+                    <p class="text">Chỉ với 10 RP là bạn đã có cơ hội trên tay trang phục cực khủng.</p>
+                    <p class="time">10:00 26/10/2021</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="info-box">
+            <a href="" class="link">
+                <svg viewBox="0 0 320 240" data-v-7f40d2dc=""><path d="M299.57,1l19.42,19.39V239h-318V1H299.57" data-v-7f40d2dc=""></path></svg>
+                <img src="img/info/112-VongQuayLongThan-880x582.png" alt="" >
+                <div class="text-box">
+                    <p class="category">Sự kiện</p>
+                    <h2>Tham gia "Vòng Quay Long Thần" - Sở hữu skin KHỦNG chỉ với 10 RP từ 10:00 26/10 đến 23:59 01/11</h2>
+                    <p class="text">Chỉ với 10 RP là bạn đã có cơ hội trên tay trang phục cực khủng.</p>
+                    <p class="time">10:00 26/10/2021</p>
+                </div>
+            </a>
+        </div> -->
+    </div>
+
+    <div class="right-info">
+        <div class="category-container">
+            <div class="category-box" id="box-1">
+                <p>Sự Kiện</p>
+                <a href="event.html"></a>                
+            </div>
+            <div class="category-box" id="box-2">
+                <p>Sự Kiện</p>
+                <a href="event.html"></a>                
+            </div>
+            <div class="category-box" id="box-3">
+                <p>Sự Kiện</p>
+                <a href="event.html"></a>                
+            </div>
+            <div class="category-box" id="box-4">
+                <p>Sự Kiện</p>
+                <a href="event.html"></a>                
+            </div>
+            <div class="category-box" id="box-5">
+                <p>Sự Kiện</p>
+                <a href="event.html"></a>                
+            </div>
+            <div class="category-box" id="box-6">
+                <p>Sự Kiện</p>
+                <a href="event.html"></a>                
+            </div>
+            
+        </div>
+    </div>
+
+</div>
+
+    <footer>
+        <div id="C-logo">
+            <img src="img/footer/logos-vn.png" alt="" id="logo">
+        </div>
+        <p id="text">Sản phẩm được hợp tác phát hành bởi Công ty TNHH Liên Minh Huyền Thoại & Công ty Cổ phần Giải trí và Thể thao Điện tử Việt Nam.
+            Văn phòng đại diện: Tầng 29, tòa nhà Trung tâm Lotte Hà Nội, số 54 đường Liễu Giai, phường Cống Vị, quận Ba Đình, thành phố Hà Nội, Việt Nam.
+            Điện thoại: (04)7305-3939; Fax: (04)3759-2429</p>
+        <div>
+            <a href="https://www.facebook.com/LienMinhHuyenThoai" target="_blank" class="more-info">
+                <i class="fab fa-facebook"> Facebook</i>
+            </a>
+            <a href="https://www.youtube.com/user/GarenaVietnam" target="_blank" class="more-info">
+                <i class="fab fa-youtube"> Youtube</i>
+            </a>
+            <a href="https://www.garena.vn/terms" target="_blank" class="more-info">
+                <i class="fas fa-info-circle">  Điều khoản sử dụng</i>
+            </a>
+            <a href="https://hotro.garena.vn/" target="_blank" class="more-info">
+                <i class="far fa-question-circle">  Trung tâm hỗ trợ</i>
+            </a>
+        </div>
+        <div id="bottom-footer">
+            <a href="">CHƠI MIỄN PHÍ</a>
+            <span></span>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/news.js"></script>
+</body>
+</html>

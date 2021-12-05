@@ -69,7 +69,6 @@ ul{
    text-align: center;
    height: 98%;
    font-size: 19px;
-   background: linear-gradient(#fce5b9,#c19e68);
    font-weight: 600;
    text-decoration: none;
    -webkit-text-fill-color: tan;
@@ -112,11 +111,11 @@ ul{
     display: block;
 }
 
-.row{
-    margin-left: 17%;
+header .row{
+    margin-left: 16.5%;
 }
 
-.column {
+header .column {
     float: left;
     width: 18%;
     margin-left: 0;
@@ -450,7 +449,6 @@ footer #bottom-footer span{
 
     #m-nav .title{
         font-size: 20px;
-        background: linear-gradient(#fce5b9,#d1ad6f);
         -webkit-text-fill-color: tan;
         font-weight: 700;
     }
@@ -490,12 +488,17 @@ footer #bottom-footer span{
 
 @media screen and (max-width: 500px) {
 
+header .logo{
+    margin: 4% 35%;
+}
+
 .navBtn{
     height: 40%;
 }
 
 .navBtn .line{
     height: 1px;
+    width: 25px;
 }
 
 .swiper{

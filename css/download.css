@@ -70,7 +70,6 @@ ul{
    text-align: center;
    height: 98%;
    font-size: 19px;
-   background: linear-gradient(#fce5b9,#c19e68);
    font-weight: 600;
    text-decoration: none;
    -webkit-text-fill-color: tan;
@@ -114,7 +113,7 @@ ul{
 }
 
 header .row{
-    margin-left: 17%;
+    margin-left: 16.5%;
 }
 
 header .column {

@@ -108,10 +108,10 @@
   
     
     <div id="info">
-        <div class="info-box">
+        <!-- <div class="info-box">
             <a href="" class="link">
-                <svg viewBox="0 0 320 240" data-v-7f40d2dc="">
-                    <path d="M299.57,1l19.42,19.39V239h-318V1H299.57" data-v-7f40d2dc=""></path>
+                <svg viewBox="0 0 320 240">
+                    <path d="M299.57,1l19.42,19.39V239h-318V1H299.57"></path>
                 </svg>
                 <img src="img/info/112-VongQuayLongThan-880x582.png" alt="" >
                 <p class="category">Sự kiện</p>
@@ -184,9 +184,9 @@
                 <p class="text">Chỉ với 10 RP là bạn đã có cơ hội trên tay trang phục cực khủng.</p>
                 <p class="time">22:00 23/10/2021</p>
             </a>
-        </div>
-
-        <a href="" id="more">XEM THÊM</a>
+        </div> -->
+<!-- 
+        <a href="" id="more">XEM THÊM</a> -->
     </div>
 
     <footer>
@@ -216,44 +216,6 @@
         </div>
     </footer>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-    <script>
-        function mDropdown() {
-          let x = document.getElementById("m-nav");
-          if (x.style.display === "block") {
-            x.style.display = "none";
-          } else {
-            x.style.display = "block";
-          }
-        }
-
-        function clickDropNew(){
-            let x = document.getElementsByClassName("active");
-            if(x[0].style.display ==="block" )
-                x[0].style.display ="none";
-            else
-                x[0].style.display ="block"
-        }
-
-        function clickDropInfo(){
-            let x = document.getElementsByClassName("active");
-            if(x[1].style.display ==="block" )
-                x[1].style.display ="none";
-            else
-                x[1].style.display ="block"
-        }
-
-        const swiper = new Swiper('.swiper', {
-        // Optional parameters  
-            autoplay:{
-                delay:2000,
-            },
-        // If we need pagination
-        pagination: {
-            el: '.swiper-pagination',
-            clickable:true,
-        },
-
-        });
-        </script>
+    <script src="./js/index.js"></script>
 </body>
 </html>
