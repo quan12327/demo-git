@@ -1,41 +1,29 @@
 function mDropdown() {
-  let x = document.getElementById("m-nav");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
+    let x = document.getElementById("m-nav");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
   }
-}
 
-function clickDropNew(){
-    let x = document.getElementsByClassName("active");
-    if(x[0].style.display ==="block" )
-        x[0].style.display ="none";
-    else
-        x[0].style.display ="block"
-}
+  function clickDropNew(){
+      let x = document.getElementsByClassName("active");
+      if(x[0].style.display ==="block" )
+          x[0].style.display ="none";
+      else
+          x[0].style.display ="block"
+  }
 
-function clickDropInfo(){
-    let x = document.getElementsByClassName("active");
-    if(x[1].style.display ==="block" )
-        x[1].style.display ="none";
-    else
-        x[1].style.display ="block"
-}
+  function clickDropInfo(){
+      let x = document.getElementsByClassName("active");
+      if(x[1].style.display ==="block" )
+          x[1].style.display ="none";
+      else
+          x[1].style.display ="block"
+  }
 
-const swiper = new Swiper('.swiper', {
-// Optional parameters  
-    autoplay:{
-        delay:2000,
-    },
-// If we need pagination
-pagination: {
-    el: '.swiper-pagination',
-    clickable:true,
-},
-
-});
-
+  
 const infoArray = [
     {
         aLink:"#",
@@ -92,7 +80,7 @@ const infoArray = [
     },
 ];
 
-function initList() {
+function initList(infoArray) {
     let lengthOfA = infoArray.length;
     let list = document.getElementById("info");
     
@@ -141,4 +129,37 @@ function initList() {
     }
   }
   
-initList();
+initList(infoArray);
+
+function clearList() {
+    let nodes = document.getElementById("info").children;
+    while (nodes.length > 0) {
+      nodes[0].remove();
+    }
+  }
+  
+  const search = () =>{
+    let keyword;
+    let lowKeyword;
+    let lowTilte;
+    let result = [];
+    let input = document.querySelector('input');
+    let lengthOfA = infoArray.length;
+  
+    input.addEventListener('keydown',(e)=>{
+      if(e.key === 'Enter'){
+        result = [];
+        keyword = e.target.value;
+              if(keyword === "");
+        lowKeyword = keyword.toLocaleLowerCase();
+        for(let i = 0; i < lengthOfA ; i++){
+            lowTilte = infoArray[i].tilte.toLocaleLowerCase();
+          if(lowTilte.includes(lowKeyword)) result.push(infoArray[i])
+        }
+  
+        clearList();
+        initList(result);
+        }
+    })
+      
+  }

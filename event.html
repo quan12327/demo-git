@@ -17,13 +17,13 @@
             <div class="pc-nav">
                 <ul class="nav">
                     <div class="dropdown">
-                          <li class="dropdown-li"><a href="event.html">TIN TỨC</a></li>
+                          <li class="dropdown-li"><a href="news.html">TIN TỨC</a></li>
                           <li class="dropdown-li"><a href="">GIỚI THIỆU</a></li>
                           
                           <div class="dropdown-content">
                               <div class="row">
                                   <div class="column">
-                                      <a href="event.html">TIN TỨC</a>
+                                      <a href="news.html">TIN TỨC</a>
                                       <a href="event.html">SỰ KIỆN</a>
                                       <a href="#">TIN GAME</a>
                                       <a href="#">ESPORTS</a>
@@ -59,7 +59,7 @@
                       <div class="group">
                           <div class="title" onclick="clickDropNew()">TIN TỨC</div>
                           <ul class="active">
-                            <li><a href="event.html">TIN TỨC</a></li>
+                            <li><a href="news.html">TIN TỨC</a></li>
                             <li><a href="event.html">SỰ KIỆN</a></li>
                             <li><a href="">TIN GAME</a></li>
                             <li><a href="">ESPORTS</a></li>
@@ -99,7 +99,7 @@
     
     <div id="search">
         <div id="search-box">
-            <input type="text" placeholder="Tìm kiếm thông tin">
+            <input type="text" placeholder="Tìm kiếm thông tin" onclick="search()">
         </div>
     </div>
 
@@ -112,7 +112,7 @@
         </div>
     </div>
     <div id="info">
-        <div class="info-box">
+        <!-- <div class="info-box">
             <a href="" class="link">
                 <svg viewBox="0 0 320 240" data-v-7f40d2dc="">
                     <path d="M299.57,1l19.42,19.39V239h-318V1H299.57" data-v-7f40d2dc=""></path>
@@ -188,7 +188,7 @@
                 <p class="text">Chỉ với 10 RP là bạn đã có cơ hội trên tay trang phục cực khủng.</p>
                 <p class="time">22:00 23/10/2021</p>
             </a>
-        </div>
+        </div> -->
     </div>
 
     <footer>
@@ -217,31 +217,6 @@
             <span></span>
         </div>
     </footer>
-    <script>
-        function mDropdown() {
-          let x = document.getElementById("m-nav");
-          if (x.style.display === "block") {
-            x.style.display = "none";
-          } else {
-            x.style.display = "block";
-          }
-        }
-
-        function clickDropNew(){
-            let x = document.getElementsByClassName("active");
-            if(x[0].style.display ==="block" )
-                x[0].style.display ="none";
-            else
-                x[0].style.display ="block"
-        }
-
-        function clickDropInfo(){
-            let x = document.getElementsByClassName("active");
-            if(x[1].style.display ==="block" )
-                x[1].style.display ="none";
-            else
-                x[1].style.display ="block"
-        }
-        </script>
+    <script src="./js/event.js"></script>
 </body>
 </html>
